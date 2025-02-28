@@ -1,0 +1,25 @@
+.login-container {
+    
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column; /* Vertical layout */
+}
+
+.login-form input {
+    border-radius: 4px; /* Rounded input fields */
+}
+
+.login-container h1 {
+    margin-bottom: 20px; /* Space below the header */
+}
+
+.login-container a {
+    color: #1976d2; /* Primary color for links */
+    text-decoration: none; /* No underline */
+}
+
+.login-container a:hover {
+    text-decoration: underline; /* Underline on hover */
+}

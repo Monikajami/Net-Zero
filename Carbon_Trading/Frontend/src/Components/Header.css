@@ -1,0 +1,52 @@
+/* Specific CSS for the Carbon Trading App Header */
+
+header.carbon-header {
+  background-color: #003b46;
+  color: #ffffff;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header.carbon-header .logo h1 {
+  font-size: 24px;
+  margin: 0;
+}
+
+header.carbon-header .nav-links {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+
+header.carbon-header .nav-links li {
+  margin: 0;
+}
+
+header.carbon-header .nav-links a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+header.carbon-header .nav-links a:hover {
+  color: #00b4cc; /* Change hover color for links */
+}
+
+/* Styling for the Logout Button */
+header.carbon-header .nav-links .logout-button {
+  background-color: transparent;
+  border: 2px solid #ffffff;
+  color: #ffffff;
+  padding: 8px 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+header.carbon-header .nav-links .logout-button:hover {
+  background-color: #d9534f;
+  color: #ffffff;
+}

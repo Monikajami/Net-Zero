@@ -1,0 +1,206 @@
+/* Overall container */
+.sellers-list-container {
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Heading styles */
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2rem; /* Increased size for better visibility */
+    color: #333; /* Darker color for contrast */
+}
+
+/* Search Bar styles */
+.search-bar {
+    width: 100%;
+    padding: 12px; /* Larger padding */
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem; /* Font size for readability */
+    transition: border-color 0.3s ease;
+}
+
+.search-bar:focus {
+    outline: none;
+    border-color: #007BFF; /* Border color on focus */
+}
+
+/* Sort button styles */
+.sort-button {
+    margin-bottom: 20px;
+    padding: 10px 15px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.sort-button:hover {
+    background-color: #0056b3;
+}
+
+/* Range filter icon and dropdown */
+.range-filter-icon {
+    position: relative;
+    font-size: 1.5rem;
+    color: #007BFF;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.range-filter-dropdown {
+    position: absolute;
+    top: 30px;
+    right: 0;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    z-index: 1;
+    width: 200px;
+}
+
+.range-input {
+    margin: 5px 0;
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.apply-icon {
+    font-size: 1.2rem;
+    color: #007BFF;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+}
+
+/* Company cards container */
+.company-cards {
+    display: flex;
+    flex-wrap: wrap; /* Allows wrapping of cards */
+    gap: 15px; /* Space between cards */
+    justify-content: center;
+}
+
+/* Individual company card styles */
+.company-card {
+    flex: 1 1 300px; /* Flexible width with min width */
+    border: 1px solid #e0e0e0; /* Light gray border */
+    border-radius: 8px;
+    padding: 20px; /* Padding for a balanced look */
+    background-color: #f9f9f9;
+    transition: transform 0.2s ease, box-shadow 0.2s ease; /* Smooth transitions */
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Hover effect for company cards */
+.company-card:hover {
+    transform: translateY(-3px); /* Lift effect */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Enhanced shadow */
+}
+
+/* Card headings */
+.company-card h3 {
+    margin: 0;
+    font-size: 1.25rem;
+    color: #007BFF; /* Highlighted color */
+}
+
+/* Paragraph styles inside company cards */
+.company-card p {
+    margin: 5px 0;
+    font-size: 0.95rem;
+    color: #555; /* Subtle color for details */
+}
+
+/* No sellers found message */
+.no-sellers {
+    text-align: center;
+    font-style: italic;
+    color: #888; /* Gray color for no sellers message */
+    margin-top: 20px;
+}
+
+
+
+
+/* Popup Form Styles */
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.popup-form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    width: 300px;
+}
+
+.popup-form h3 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.popup-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.popup-form input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.popup-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.popup-form button:hover {
+    background-color: #0056b3;
+}
+
+.popup-form button:last-child {
+    background-color: #f44336;
+}
+
+.popup-form button:last-child:hover {
+    background-color: #d32f2f;
+}
